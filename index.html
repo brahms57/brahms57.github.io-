@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio – Brahim Aourdou | BTS SIO SISR</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!-- ===== HEADER ===== -->
@@ -16,7 +16,9 @@
         <a href="#skills">Compétences</a>
         <a href="#projects">Projets</a>
         <a href="#education">Parcours</a>
+        <a href="#pdfs">Comptes rendus</a>
         <a href="#contact">Contact</a>
+        <a href="presentation.html" target="_blank">Présentation</a>
       </nav>
       <button id="theme-toggle" aria-label="Changer le thème">🌙</button>
     </div>
@@ -32,83 +34,102 @@
   </section>
 
   <!-- ===== ABOUT ===== -->
-  <section id="about" class="about">
-    <div class="container">
-      <h2>À propos de moi</h2>
-      <p>Je m'appelle <strong>Brahim Aourdou</strong>, étudiant en deuxième année de <strong>BTS Services Informatiques aux Organisations</strong>, option <strong>SISR (Solutions d’Infrastructure, Systèmes et Réseaux)</strong>. 
-      Passionné par l’informatique, j’aime relever des défis techniques et développer mes compétences dans l’administration réseau, la cybersécurité et la virtualisation.</p>
+  <section id="about" class="about fade-in">
+    <div class="container about-grid">
+      <div class="about-img">
+        <img src="profil.jpg" alt="Photo de Brahim Aourdou">
+      </div>
+      <div class="about-text">
+        <h2>À propos de moi</h2>
+        <p>Je m'appelle <strong>Brahim Aourdou</strong>, étudiant en deuxième année de <strong>BTS Services Informatiques aux Organisations</strong>, option <strong>SISR</strong> (Solutions d’Infrastructure, Systèmes et Réseaux).</p>
+        <p>Passionné par l’informatique, j’aime relever des défis techniques et développer mes compétences dans l’administration réseau, la cybersécurité et la virtualisation.</p>
+        <a href="CV_Brahim_Aourdou.pdf" class="btn" download>Télécharger mon CV</a>
+      </div>
     </div>
   </section>
 
   <!-- ===== SKILLS ===== -->
-  <section id="skills" class="skills">
+  <section id="skills" class="skills fade-in">
     <div class="container">
       <h2>Compétences</h2>
       <div class="skills-grid">
-        <div class="skill-card">
-          <h3>Réseaux</h3>
-          <p>Configuration de routeurs, VLAN, DHCP, DNS, adressage IP, pare-feu et supervision réseau.</p>
-        </div>
-        <div class="skill-card">
-          <h3>Virtualisation</h3>
-          <p>Installation et gestion de machines virtuelles via VMware et VirtualBox.</p>
-        </div>
-        <div class="skill-card">
-          <h3>Systèmes</h3>
-          <p>Administration Linux & Windows Server, Active Directory, gestion des utilisateurs et des permissions.</p>
-        </div>
-        <div class="skill-card">
-          <h3>Cybersécurité</h3>
-          <p>Analyse des vulnérabilités, mise en place de sauvegardes, sécurité des réseaux et des données.</p>
-        </div>
-        <div class="skill-card">
-          <h3>Développement</h3>
-          <p>Création de scripts Bash et PowerShell, notions en HTML, CSS, PHP, et bases de données MySQL.</p>
-        </div>
+        <div class="skill-card">💻<h3>Réseaux</h3><p>Configuration de routeurs, VLAN, DHCP, DNS, supervision réseau.</p></div>
+        <div class="skill-card">🧩<h3>Virtualisation</h3><p>VMware, VirtualBox, gestion de serveurs virtuels.</p></div>
+        <div class="skill-card">⚙️<h3>Systèmes</h3><p>Linux, Windows Server, Active Directory, sécurité système.</p></div>
+        <div class="skill-card">🔒<h3>Cybersécurité</h3><p>Audit, sauvegardes, pare-feu, détection d'intrusions.</p></div>
+        <div class="skill-card">📜<h3>Développement</h3><p>Scripts Bash, PowerShell, PHP, HTML, CSS, SQL.</p></div>
       </div>
     </div>
   </section>
 
   <!-- ===== PROJECTS ===== -->
-  <section id="projects" class="projects">
+  <section id="projects" class="projects fade-in">
     <div class="container">
       <h2>Projets réalisés</h2>
       <div class="projects-grid">
         <div class="project-card">
-          <h3>Projet 1 – Infrastructure réseau</h3>
-          <p>Mise en place d’un réseau complet avec serveurs, clients et routage inter-VLAN dans un environnement virtuel.</p>
+          <h3>Infrastructure réseau</h3>
+          <p>Création d’un réseau complet avec serveurs, routage et VLAN dans un environnement virtuel.</p>
         </div>
         <div class="project-card">
-          <h3>Projet 2 – Supervision</h3>
-          <p>Configuration de l’outil GLPI/FusionInventory pour la gestion de parc et la supervision du réseau.</p>
+          <h3>Supervision du parc</h3>
+          <p>Déploiement de GLPI & FusionInventory pour la gestion du parc et la supervision du réseau.</p>
         </div>
         <div class="project-card">
-          <h3>Projet 3 – Sécurisation</h3>
-          <p>Mise en place de stratégies de sécurité sur Windows Server et configuration d’un pare-feu pfSense.</p>
+          <h3>Sécurisation d’un SI</h3>
+          <p>Mise en place de stratégies de sécurité, pare-feu pfSense, sauvegardes automatisées.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ===== EDUCATION ===== -->
-  <section id="education" class="education">
+  <section id="education" class="education fade-in">
     <div class="container">
       <h2>Parcours & Formations</h2>
       <ul class="timeline">
         <li>
           <span class="year">2023 – 2025</span>
-          <p><strong>BTS SIO – Option SISR</strong><br>Lycée [nom du lycée], [ville]</p>
+          <p><strong>BTS SIO – Option SISR</strong><br>Lycée [Nom du lycée], [Ville]</p>
         </li>
         <li>
           <span class="year">2023</span>
-          <p><strong>Baccalauréat</strong> – Série [à compléter] • Mention [si applicable]</p>
+          <p><strong>Baccalauréat</strong> – Série [à compléter]</p>
         </li>
       </ul>
     </div>
   </section>
 
+  <!-- ===== PDF SECTION ===== -->
+  <section id="pdfs" class="pdfs fade-in">
+    <div class="container">
+      <h2>Comptes rendus PDF</h2>
+      <p>Retrouvez ici mes comptes rendus de projets, stages et travaux réalisés durant mes deux années de BTS SIO SISR.</p>
+
+      <div class="pdf-grid">
+        <div class="pdf-card">
+          <h3>Compte rendu – Stage 1</h3>
+          <iframe src="pdfs/compte_rendu_stage1.pdf"></iframe>
+          <a href="pdfs/compte_rendu_stage1.pdf" class="btn" target="_blank">Ouvrir</a>
+        </div>
+
+        <div class="pdf-card">
+          <h3>Compte rendu – Stage 2</h3>
+          <iframe src="pdfs/compte_rendu_stage2.pdf"></iframe>
+          <a href="pdfs/compte_rendu_stage2.pdf" class="btn" target="_blank">Ouvrir</a>
+        </div>
+
+        <div class="pdf-card">
+          <h3>Projet Réseau</h3>
+          <iframe src="pdfs/compte_rendu_projet_reseau.pdf"></iframe>
+          <a href="pdfs/compte_rendu_projet_reseau.pdf" class="btn" target="_blank">Ouvrir</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== CONTACT ===== -->
-  <section id="contact" class="contact">
+  <section id="contact" class="contact fade-in">
     <div class="container">
       <h2>Contact</h2>
       <p>Une question ou une opportunité ? N’hésitez pas à me contacter :</p>
@@ -126,23 +147,14 @@
     <p>© 2025 – Brahim Aourdou | BTS SIO SISR</p>
   </footer>
 
-  <!-- ===== SCRIPT DARK MODE ===== -->
-  <script>
-    const toggle = document.getElementById('theme-toggle');
-    const body = document.body;
+  <!-- ===== LIGHTBOX POUR PDF ===== -->
+  <div id="pdf-lightbox" class="pdf-lightbox">
+    <div class="pdf-lightbox-content">
+      <span class="close">&times;</span>
+      <iframe id="pdf-viewer" src="" frameborder="0"></iframe>
+    </div>
+  </div>
 
-    // Vérifie si un thème est déjà enregistré
-    if (localStorage.getItem('theme') === 'dark') {
-      body.classList.add('dark-mode');
-      toggle.textContent = '☀️';
-    }
-
-    toggle.addEventListener('click', () => {
-      body.classList.toggle('dark-mode');
-      const isDark = body.classList.contains('dark-mode');
-      toggle.textContent = isDark ? '☀️' : '🌙';
-      localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>

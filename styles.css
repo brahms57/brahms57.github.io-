@@ -1,0 +1,420 @@
+/* === RESET & BASE === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  color: #222;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+/* === HEADER === */
+.header {
+  background: #1d3557;
+  color: white;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.logo span {
+  color: #e63946;
+}
+
+.nav a {
+  color: white;
+  margin: 0 0.8rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #a8dadc;
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+/* === HERO === */
+.hero {
+  background: linear-gradient(to right, #457b9d, #1d3557);
+  color: white;
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+.hero h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 0 auto 1.5rem auto;
+}
+
+.btn {
+  background: #e63946;
+  color: white;
+  text-decoration: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #d62828;
+}
+
+/* === ABOUT === */
+.about {
+  padding: 4rem 1rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  align-items: center;
+  gap: 2rem;
+}
+
+.about h2 {
+  color: #1d3557;
+  margin-bottom: 1rem;
+}
+
+/* === SKILLS === */
+.skills {
+  background: #f8f9fa;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.skills h2 {
+  color: #1d3557;
+  margin-bottom: 2rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+/* === PROJECTS === */
+.projects {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.projects h2 {
+  color: #1d3557;
+  margin-bottom: 2rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* === EDUCATION === */
+.education {
+  background: #f8f9fa;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+.timeline li {
+  background: white;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.year {
+  display: block;
+  font-weight: bold;
+  color: #e63946;
+  margin-bottom: 0.5rem;
+}
+
+/* === PDF SECTION === */
+.pdfs {
+  padding: 4rem 1rem;
+  background: #f9f9f9;
+  text-align: center;
+  transition: background 0.4s, color 0.4s;
+}
+
+.pdfs h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #1d3557;
+}
+
+.pdfs p {
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  color: #444;
+}
+
+.pdf-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.pdf-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pdf-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.pdf-card iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+  transition: transform 0.3s;
+}
+
+.pdf-card iframe:hover {
+  transform: scale(1.02);
+}
+
+/* === PDF LIGHTBOX === */
+.pdf-lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+.pdf-lightbox.active {
+  display: flex;
+  animation: fadeIn 0.3s ease;
+}
+
+.pdf-lightbox-content {
+  position: relative;
+  width: 90%;
+  max-width: 1000px;
+  background: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  animation: zoomIn 0.4s ease;
+}
+
+.pdf-lightbox iframe {
+  width: 100%;
+  height: 90vh;
+  border: none;
+}
+
+.pdf-lightbox .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  z-index: 10000;
+  transition: color 0.3s;
+}
+
+.pdf-lightbox .close:hover {
+  color: #e63946;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* === CONTACT === */
+.contact {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  align-self: center;
+  cursor: pointer;
+}
+
+/* === FOOTER === */
+.footer {
+  background: #1d3557;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* === ANIMATIONS === */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* === DARK MODE === */
+.dark-mode {
+  background: #0d1b2a;
+  color: #f1faee;
+}
+
+.dark-mode .header {
+  background: #111827;
+}
+
+.dark-mode .nav a {
+  color: #f1faee;
+}
+
+.dark-mode .nav a:hover {
+  color: #a8dadc;
+}
+
+.dark-mode .hero {
+  background: linear-gradient(to right, #14213d, #1d3557);
+}
+
+.dark-mode .skills,
+.dark-mode .education,
+.dark-mode .pdfs {
+  background: #1b263b;
+}
+
+.dark-mode .skill-card,
+.dark-mode .project-card,
+.dark-mode .timeline li,
+.dark-mode .pdf-card {
+  background: #2b2d42;
+  color: #f1faee;
+  box-shadow: 0 2px 8px rgba(255,255,255,0.05);
+}
+
+.dark-mode .footer {
+  background: #111827;
+}
+
+.dark-mode .btn {
+  background: #e63946;
+}
+
+.dark-mode .btn:hover {
+  background: #d62828;
+}

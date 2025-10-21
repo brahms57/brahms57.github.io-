@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Présentation – Brahim Aourdou</title>
+
+  <!-- ✅ Révélation JS (CDN officiel) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/dist/theme/black.css" id="theme">
+
+  <!-- ✅ Ton style custom (optionnel pour conserver la cohérence) -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <style>
+    .reveal h1, .reveal h2, .reveal h3, .reveal p {
+      color: #fff;
+    }
+    .reveal {
+      background: linear-gradient(135deg, #1d3557, #457b9d);
+      color: #fff;
+    }
+    .reveal .slides section img {
+      max-height: 400px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <!-- Slide 1 -->
+      <section>
+        <h1>Brahim Aourdou</h1>
+        <h3>Étudiant en BTS SIO – Option SISR</h3>
+        <p>Bienvenue sur ma présentation interactive !</p>
+      </section>
+
+      <!-- Slide 2 -->
+      <section>
+        <h2>Qui suis-je ?</h2>
+        <p>Étudiant passionné d’informatique, spécialisé dans les systèmes et réseaux, avec un fort intérêt pour la cybersécurité et l’administration système.</p>
+        <img src="profil.jpg" alt="Photo de Brahim Aourdou">
+      </section>
+
+      <!-- Slide 3 -->
+      <section>
+        <h2>Compétences clés</h2>
+        <ul>
+          <li>Réseaux (Cisco, VLAN, DHCP, DNS)</li>
+          <li>Virtualisation (VMware, VirtualBox)</li>
+          <li>Administration Systèmes (Linux, Windows Server)</li>
+          <li>Cybersécurité & Sauvegardes</li>
+          <li>Développement Web et Scripting</li>
+        </ul>
+      </section>
+
+      <!-- Slide 4 -->
+      <section>
+        <h2>Projets Réalisés</h2>
+        <section>
+          <h3>Infrastructure Réseau</h3>
+          <p>Conception d’un réseau complet avec routage, VLAN, et supervision.</p>
+        </section>
+        <section>
+          <h3>Supervision GLPI & FusionInventory</h3>
+          <p>Déploiement d’une solution de gestion de parc informatique.</p>
+        </section>
+        <section>
+          <h3>Sécurisation du SI</h3>
+          <p>Mise en place de pare-feu pfSense et de stratégies de sauvegarde.</p>
+        </section>
+      </section>
+
+      <!-- Slide 5 -->
+      <section>
+        <h2>Parcours scolaire</h2>
+        <p><strong>BTS SIO – SISR</strong><br>Lycée [Nom du lycée], [Ville]</p>
+        <p>2023 – 2025</p>
+      </section>
+
+      <!-- Slide 6 -->
+      <section>
+        <h2>Contact</h2>
+        <p>📧 <strong>brahim.aourdou@example.com</strong></p>
+        <p>💼 <a href="index.html" style="color:#a8dadc;">Voir mon portfolio complet</a></p>
+      </section>
+    </div>
+  </div>
+
+  <!-- ✅ Scripts Reveal.js -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/dist/reveal.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      slideNumber: true,
+      transition: 'fade', // fade, slide, convex, concave, zoom
+      backgroundTransition: 'slide',
+      controls: true,
+      progress: true,
+    });
+  </script>
+</body>
+</html>
